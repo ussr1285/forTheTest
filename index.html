@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Firebase Hosting</title>
-
+<!--
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/6.2.4/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -14,15 +14,26 @@
     <script defer src="/__/firebase/6.2.4/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
+-->
 </head>
 
 <body>
+    <script>
+    setTimeout(function(){
+        document.addEventListener("message", fucntion(data){
+            alert("네이티브 앱에서 전달받은 문자열입니다 -> " + data.data)
+    })
+    window.postMessage("웹페이지에서 전송한 문자열입니다.")
+    }, 200);
+    </script>
+    
+    <!--
     <h1>Hello world</h1>
     <button id="btnSend">통신하기</button>
     <p id="result"></p>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="webViewBridge.js?ver=4"></script>
     <script src="index.js?ver=4"></script>
+    -->
 </body>
 </html>
