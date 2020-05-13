@@ -17,13 +17,12 @@
          * javascript에서 react-native에 메세지를 보낸다.
          */
         window.webViewBridge = {
-            send: function (targetFunc, data, success, error) {
-
+            locationSend: function (targetFunc, success, error) {
                 var msgObj = {
                     targetFunc: targetFunc,
                     data: data || {}
                 };
-
+                
                 if (success || error) {
                     msgObj.msgId = guid();
                 }
