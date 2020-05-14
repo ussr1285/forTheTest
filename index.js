@@ -19,11 +19,12 @@
             $('#result').html( JSON.stringify(res) ); // JSON.stringify(res)
             
             $.each( JSON.stringify(res), function( latitude, longitude ) {
-              alert( key + ": " + value );
+              $('#mapLink').html(key);
+              $('#mapLink').html(value);
             });
             
             
-            $('#mapLink').html(posx+"123");
+            //$('#mapLink').html(posx+"123");
             
         }, function(err) {
             console.error(err);
