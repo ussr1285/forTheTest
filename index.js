@@ -18,7 +18,7 @@
             
             $('#result').html( JSON.stringify(res) ); // JSON.stringify(res)
             
-            $('#mapLink').html(text);
+            $('#mapLink').html(posx+"123");
             
         }, function(err) {
             console.error(err);
