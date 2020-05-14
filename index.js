@@ -16,7 +16,7 @@
             
             let text = '<a href="'+ "http://i-web.kr/skins/blockContent/inc/map_test.php?posx="+ posx +"&posy=" + posy +'">go Map</a>;'; 
             
-            $('#result').html( posx ); // JSON.stringify(res)
+            $('#result').html( JSON.stringify(res) ); // JSON.stringify(res)
             
             $('#mapLink').html(text);
             
