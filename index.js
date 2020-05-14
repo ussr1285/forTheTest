@@ -18,7 +18,7 @@
             
             $('#result').html( JSON.stringify(res) ); // JSON.stringify(res)
             
-            $.each( JSON.stringify(res), function( latitude, longitude ) {
+            $.each( res, function( latitude, longitude ) {
               $('#mapLink').html(key);
               $('#mapLink').html(value);
             });
