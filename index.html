@@ -3,10 +3,10 @@
 <script> 
     function button(){
         document.addEventListener("message", function(data){
-        alert("네이티브 앱에서 전달받은 문자열임 : " + data.data); 
+        alert("네이티브 앱에서 전달받은 문자열입니다. : " + data.data); 
         })
         
-        //window.postMessage("웹페이지에서 전송한 문자열입니다.");
+        window.postMessage("웹페이지에서 전송한 문자열입니다.");
         return;
     }
     
