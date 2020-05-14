@@ -11,8 +11,8 @@
             
             //let jsonData = 
             
-            let posx = JSON.stringify(res.data.posx);
-            let posy = JSON.stringify(res.data.posy);
+            let posx = JSON.stringify(res.data.latitude);
+            let posy = JSON.stringify(res.data.longitude);
             
             let text = '<a href="'+ "http://i-web.kr/skins/blockContent/inc/map_test.php?posx="+ posx +"&posy=" + posy +'">go Map</a>;'; 
             
