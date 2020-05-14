@@ -6,8 +6,8 @@
             url: '/movie.json'
         }
 
-        // "getMovieList"는 react-native에서 받는 메서드 이름입니다.
-        window.webViewBridge.send('getMovieList', option, function(res) {
+        // "sendLocation"는 react-native에서 받는 메서드 이름입니다.
+        window.webViewBridge.send('sendLocation', option, function(res) {
             $('#result').html(JSON.stringify(res))
         }, function(err) {
             console.error(err)
