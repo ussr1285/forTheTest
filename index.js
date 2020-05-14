@@ -24,7 +24,7 @@
             });
             
             
-            //$('#mapLink').html(posx+"123");
+            $('#mapLink').html(posx+"123");
             
         }, function(err) {
             console.error(err);
