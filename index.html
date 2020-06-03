@@ -11,13 +11,14 @@
   <h1>Hello</h1>
   
   <script>
-    setTimeout(function () {
+    function onMessage() {
       document.addEventListener("message", function(data){
         document.write("Yeah");
         alert("네이티브 앱에서 전달받은 문자열입니다. ==> "+data.data);
       });
-      window.postMessage("웹 페이지에서 전송한 문자열입니다.");
-    }, 2000);
+      //window.postMessage("웹 페이지에서 전송한 문자열입니다.");
+    }
+    onMessage();
     
   </script>
   
